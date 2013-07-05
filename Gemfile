@@ -27,6 +27,7 @@ group :test, :development do
 	gem 'binding_of_caller'
 	gem 'meta_request'
 	gem 'pry-rails'
+	gem 'haml-rails'
 
 	# Test and Development # Rspec
 	gem 'rspec-rails'
@@ -37,9 +38,18 @@ group :test, :development do
 	gem 'email_spec'
 	gem 'launchy'
 	gem 'capybara'
+	gem 'shoulda-matchers'
 
 	#spork
 	gem 'spork'
+
+	# Guard
+	gem 'growl'
+	gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+	gem 'guard-bundler'
+	gem 'guard-rspec'
+	gem 'guard-spork'
+
 end
 
 
